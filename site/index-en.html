@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Italiano³ — Learn Italian from zero to C1</title>
+<meta name="description" content="Learn Italian from A1 to C1 with Persian explanations, offline audio, vocabulary, grammar and practice.">
+<meta name="theme-color" content="#0a0a24">
+<link rel="icon" href="assets/icon-64.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<meta property="og:title" content="Italiano³ — Learn Italian">
+<meta property="og:description" content="Learn Italian offline with Persian explanations. From A1 to C1.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Italiano³","operatingSystem":"Android","applicationCategory":"EducationalApplication","inLanguage":"fa","offers":{"@type":"Offer","price":"0","priceCurrency":"IRR"}}</script>
+<style>
+@font-face{font-family:Vazirmatn;src:url(assets/vazir.woff2) format("woff2");font-display:swap}
+:root{--bg:#0a0a24;--bg2:#120d36;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.12);--txt:#f3f2ff;--mut:#b6b3d8;--g:#7cf29a;--g2:#38d97a;--p:#8b6cff;--gold:#f5c542;--r:26px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Vazirmatn,system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.9;overflow-x:hidden;
+  background-image:radial-gradient(900px 600px at 85% -10%,rgba(139,108,255,.35),transparent 60%),radial-gradient(700px 500px at -10% 30%,rgba(56,217,122,.16),transparent 60%),radial-gradient(800px 600px at 110% 80%,rgba(66,199,255,.14),transparent 60%)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+.it{font-family:system-ui,sans-serif;direction:ltr;unicode-bidi:isolate}
+sup{color:var(--g);font-size:.6em}
+/* nav */
+header{position:sticky;top:0;z-index:20;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:rgba(10,10,36,.62);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:18px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px;direction:ltr}
+.brand img{width:40px;height:40px;border-radius:12px;box-shadow:0 6px 18px rgba(139,108,255,.45)}
+nav{display:flex;gap:22px;margin-inline-start:auto;font-size:14px;color:var(--mut)}
+nav a:hover{color:var(--txt)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:18px;padding:14px 24px;font-weight:800;font-size:16px;border:0;cursor:pointer;transition:.25s;white-space:nowrap}
+.btn-g{color:#062a14;background:linear-gradient(180deg,#9dffb6,var(--g2));box-shadow:0 10px 0 #1f9a52,0 18px 34px rgba(56,217,122,.35);transform:translateY(-4px)}
+.btn-g:hover{transform:translateY(-2px);box-shadow:0 8px 0 #1f9a52,0 14px 26px rgba(56,217,122,.35)}
+.btn-l{color:var(--txt);background:var(--card);border:1px solid var(--line)}
+.btn-l:hover{background:rgba(255,255,255,.1)}
+.btn-sm{padding:9px 16px;font-size:14px;border-radius:14px;transform:none;box-shadow:0 5px 0 #1f9a52}
+.bz{width:26px;height:26px;border-radius:8px;background:#062a14;color:var(--g);display:grid;place-items:center;font-size:15px;font-weight:900}
+/* hero */
+.hero{padding:70px 0 40px}
+.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.pill{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:var(--g);background:rgba(124,242,154,.1);border:1px solid rgba(124,242,154,.3);padding:6px 14px;border-radius:99px;margin-bottom:18px}
+h1{font-size:clamp(34px,5.2vw,58px);line-height:1.3;font-weight:900;letter-spacing:-.5px}
+h1 .grad{background:linear-gradient(90deg,var(--g),#42c7ff 50%,var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(16px,1.6vw,19px);color:var(--mut);margin:18px 0 30px;max-width:560px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:28px;font-size:13px;color:var(--mut)}
+.trust span{display:flex;align-items:center;gap:6px}
+.trust b{color:var(--g)}
+/* phone */
+.stage{position:relative;height:620px;perspective:1400px}
+.phone{position:absolute;width:290px;aspect-ratio:9/16;border-radius:38px;overflow:hidden;border:8px solid #1b1840;background:#000;
+  box-shadow:0 40px 80px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.08),inset 0 0 0 1px rgba(255,255,255,.05)}
+.phone img{width:100%;height:100%;object-fit:cover}
+.ph1{left:50%;top:10px;transform:translateX(-50%) rotateY(-14deg) rotateX(4deg);z-index:3;animation:float 7s ease-in-out infinite}
+.ph2{left:0;top:90px;transform:rotateY(22deg) scale(.82);filter:brightness(.75);z-index:2}
+.ph3{right:0;top:90px;transform:rotateY(-26deg) scale(.82);filter:brightness(.75);z-index:1}
+@keyframes float{0%,100%{transform:translateX(-50%) rotateY(-14deg) rotateX(4deg) translateY(0)}50%{transform:translateX(-50%) rotateY(-10deg) rotateX(2deg) translateY(-14px)}}
+.chip{position:absolute;z-index:4;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:18px;font-size:13px;font-weight:700;
+  background:rgba(25,20,60,.75);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);box-shadow:0 14px 30px rgba(0,0,0,.4)}
+.chip img{width:34px;height:34px}
+.c1{top:60px;right:-6px;animation:bob 5s ease-in-out infinite}
+.c2{bottom:90px;left:-10px;animation:bob 6s ease-in-out infinite .8s}
+.c3{bottom:20px;right:30px;animation:bob 5.5s ease-in-out infinite 1.6s}
+@keyframes bob{50%{transform:translateY(-10px)}}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin:30px 0 10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;text-align:center}
+.stat b{display:block;font-size:30px;font-weight:900;background:linear-gradient(180deg,#fff,#c9c3ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:13px;color:var(--mut)}
+/* sections */
+section{padding:80px 0}
+.sh{text-align:center;max-width:680px;margin:0 auto 44px}
+.sh small{color:var(--g);font-weight:800;letter-spacing:.5px}
+h2{font-size:clamp(26px,3.4vw,38px);font-weight:900;line-height:1.4;margin:6px 0 10px}
+.sh p{color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.f{position:relative;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:var(--r);padding:26px;overflow:hidden;transition:.3s}
+.f:hover{transform:translateY(-6px);border-color:rgba(124,242,154,.4)}
+.f img{width:68px;height:68px;margin-bottom:12px;filter:drop-shadow(0 10px 14px rgba(0,0,0,.4))}
+.f h3{font-size:19px;font-weight:800;margin-bottom:6px}
+.f p{font-size:14.5px;color:var(--mut)}
+.f:after{content:"";position:absolute;inset:auto -40px -60px auto;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(139,108,255,.25),transparent 70%)}
+/* gallery */
+.gal{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 4px 26px;scrollbar-width:thin}
+.gal img{flex:0 0 auto;width:240px;border-radius:26px;scroll-snap-align:center;box-shadow:0 20px 40px rgba(0,0,0,.45);border:1px solid var(--line)}
+/* levels */
+.path{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative}
+.lv{border-radius:24px;padding:22px 16px;text-align:center;border:1px solid var(--line);background:var(--card);position:relative}
+.lv .b{width:64px;height:64px;margin:0 auto 10px;border-radius:20px;display:grid;place-items:center;font:900 22px system-ui;color:#fff;box-shadow:inset 0 -6px 0 rgba(0,0,0,.2),0 10px 22px rgba(0,0,0,.35)}
+.lv h4{font-size:15px;margin-bottom:4px}
+.lv p{font-size:13px;color:var(--mut)}
+.lv .tag{position:absolute;top:10px;left:10px;font-size:11px;padding:2px 8px;border-radius:99px;font-weight:800}
+.free{background:rgba(124,242,154,.15);color:var(--g)}
+.pro{background:rgba(245,197,66,.15);color:var(--gold)}
+/* pricing */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:880px;margin:0 auto}
+.plan{border-radius:30px;padding:30px;border:1px solid var(--line);background:var(--card)}
+.plan.gold{background:linear-gradient(160deg,rgba(245,197,66,.16),rgba(139,108,255,.12));border-color:rgba(245,197,66,.45);box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.plan h3{font-size:22px;font-weight:900;display:flex;align-items:center;gap:10px}
+.plan h3 img{width:44px;height:44px}
+.plan .price{font-size:15px;color:var(--mut);margin:6px 0 16px}
+.plan ul{list-style:none;padding:0;display:grid;gap:10px;font-size:15px}
+.plan li{display:flex;gap:10px;align-items:flex-start}
+.plan li:before{content:"✓";color:var(--g);font-weight:900}
+.plan.gold li:before{color:var(--gold)}
+/* teachers */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.duo .shot{max-width:320px;margin:auto;border-radius:30px;box-shadow:0 30px 60px rgba(0,0,0,.5);border:1px solid var(--line)}
+.duo ul{list-style:none;padding:0;display:grid;gap:14px;margin-top:18px}
+.duo li{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px}
+.duo li img{width:40px;height:40px;flex:0 0 auto}
+.duo li p{font-size:14px;color:var(--mut)}
+/* faq */
+.faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
+details{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px 20px}
+summary{cursor:pointer;font-weight:800;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary:after{content:"+";color:var(--g);font-size:22px;line-height:1}
+details[open] summary:after{content:"−"}
+details p{color:var(--mut);margin-top:10px;font-size:15px}
+/* final cta */
+.final{border-radius:36px;padding:50px 30px;text-align:center;background:linear-gradient(135deg,rgba(139,108,255,.35),rgba(56,217,122,.2));border:1px solid var(--line);position:relative;overflow:hidden}
+.final img.ic{width:96px;height:96px;margin:0 auto 14px;border-radius:26px;box-shadow:0 18px 40px rgba(0,0,0,.4)}
+.final .cta{justify-content:center;margin-top:24px}
+footer{padding:40px 0 50px;color:var(--mut);font-size:14px;border-top:1px solid var(--line);margin-top:60px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 30px;align-items:center;justify-content:space-between}
+footer nav{margin:0}
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+@media (max-width:960px){
+  .hgrid,.duo{grid-template-columns:1fr}
+  .stage{height:520px;max-width:460px;margin:0 auto;width:100%}
+  .phone{width:240px}
+  .grid{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .path{grid-template-columns:repeat(3,1fr)}
+  nav.links{display:none}
+}
+@media (max-width:620px){
+  .grid,.plans{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .path{grid-template-columns:1fr 1fr}
+  .stage{height:460px}
+  .phone{width:210px}
+  .ph2{left:-20px}.ph3{right:-20px}
+  .c1{right:0}.c2{left:0}
+  section{padding:56px 0}
+  .hero{padding-top:40px}
+  header .btn-sm{display:none}
+  .stat:last-child{grid-column:1/-1}
+  .lv{padding-top:34px}
+  footer .wrap{flex-direction:column;text-align:center}
+  footer nav{flex-direction:column;gap:6px;align-items:center}
+}
+
+.language-switch{position:fixed;bottom:20px;inset-inline-end:20px;z-index:100;background:#302166;color:#fff;border:1px solid #a99cff;border-radius:999px;padding:10px 20px;font:700 15px system-ui,sans-serif;box-shadow:0 4px 18px #0004;text-decoration:none}.language-switch:focus-visible{outline:3px solid #38d97a;outline-offset:4px}
+</style>
+<link rel="alternate" hreflang="fa" href="index.html"><link rel="alternate" hreflang="en" href="index-en.html"></head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#"><img src="assets/icon-192.png" alt="Italiano³"><span>Italiano<sup>³</sup></span></a>
+    <nav class="links"><a href="#features">Features</a><a href="#teachers">Audio classes</a><a href="#levels">Levels</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+    <a class="btn btn-g btn-sm bazaar" href="https://cafebazaar.ir/app/ir.italiano3.app" target="_blank" rel="noopener">Get on Bazaar</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hgrid">
+    <div>
+      <span class="pill">🇮🇹 Android app · Lessons in Persian</span>
+      <h1>Learn Italian <span class="grad">from zero to C1</span><br>with explanations in Persian</h1>
+      <p class="lead">2,000 illustrated words with pronunciation, audio grammar classes with two Persian-speaking teachers, verb conjugations, conversations and stories — all offline, in one beautiful 3D app.</p>
+      <div class="cta">
+        <a class="btn btn-g bazaar" href="https://cafebazaar.ir/app/ir.italiano3.app" target="_blank" rel="noopener"><span class="bz">B</span>Download free from Cafe Bazaar</a>
+        <a class="btn btn-l" href="#shots">See app screenshots</a>
+      </div>
+      <div class="trust"><span><b>✓</b> A1 and A2 free</span><span><b>✓</b> Offline lessons</span><span><b>✓</b> No sign-up</span></div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="phone ph2"><img src="assets/shots/s2.webp" alt=""></div>
+      <div class="phone ph3"><img src="assets/shots/s4.webp" alt=""></div>
+      <div class="phone ph1"><img src="assets/shots/s1.webp" alt=""></div>
+      <div class="chip c1"><img src="assets/3d/speaking-head.webp" alt="">Offline native pronunciation</div>
+      <div class="chip c2"><img src="assets/3d/trophy.webp" alt="">Tests and certificates at every level</div>
+      <div class="chip c3"><img src="assets/3d/graduation-cap.webp" alt="">56 audio classes</div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="stats rv">
+      <div class="stat"><b>2,000</b><span>words with pictures and pronunciation</span></div>
+      <div class="stat"><b>56</b><span>audio grammar classes</span></div>
+      <div class="stat"><b>330</b><span>fully conjugated verbs</span></div>
+      <div class="stat"><b>17,000+</b><span>verb forms with real audio</span></div>
+      <div class="stat"><b>5</b><span>levels from A1 to C1</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="sh rv"><small>Features</small><h2>Everything you need to learn Italian</h2><p>Designed for Persian speakers, with clear, friendly explanations and practice that sticks.</p></div>
+    <div class="grid">
+      <div class="f rv"><img src="assets/3d/framed-picture.webp" alt=""><h3>Flashcards with real pictures</h3><p>2,000 common words with Persian meanings, IPA, example sentences and smart Leitner review at just the right time.</p></div>
+      <div class="f rv"><img src="assets/3d/speaking-head.webp" alt=""><h3>Native pronunciation, offline</h3><p>Over 4,600 Italian audio files for words and sentences, plus audio for all 17,000 verb forms — built into the app.</p></div>
+      <div class="f rv"><img src="assets/3d/microphone.webp" alt=""><h3>Microphone pronunciation practice</h3><p>Say the sentence, get a pronunciation score and see mistakes. Record yourself and compare with the original pronunciation.</p></div>
+      <div class="f rv"><img src="assets/3d/open-book.webp" alt=""><h3>Complete A1–C1 grammar</h3><p>56 lessons with tables, examples and exercises, from articles to the subjunctive and advanced conditionals.</p></div>
+      <div class="f rv"><img src="assets/3d/high-voltage.webp" alt=""><h3>330 conjugated verbs</h3><p>All major tenses, including the subjunctive and imperative, with real audio and conjugation practice that reads the correct answer aloud.</p></div>
+      <div class="f rv"><img src="assets/3d/person-raising-hand.webp" alt=""><h3>Conversations and stories</h3><p>Real-life scenarios at restaurants, hotels and train stations, plus short audio stories to develop listening and speaking.</p></div>
+      <div class="f rv"><img src="assets/3d/trophy.webp" alt=""><h3>Tests and certificates</h3><p>Take a final test at each level and earn an Italiano³ certificate with a unique number when you pass.</p></div>
+      <div class="f rv"><img src="assets/3d/seedling.webp" alt=""><h3>Daily motivation</h3><p>Daily streaks, points, practice reminders and progress charts to help you move forward every day.</p></div>
+      <div class="f rv"><img src="assets/3d/shield.webp" alt=""><h3>Private and offline</h3><p>No sign-up. Your progress stays on your phone, and you can back it up whenever you like.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="shots">
+  <div class="wrap">
+    <div class="sh rv"><small>App screenshots</small><h2>Beautiful, three-dimensional and simple</h2><p>Multiple color themes, glass-style design and a fully right-to-left Persian app interface.</p></div>
+    <div class="gal rv">
+      <img src="assets/shots/s1.webp" alt="Italiano³ app screenshot (Persian interface)" loading="lazy">
+      <img src="assets/shots/s2.webp" alt="Italiano³ app screenshot (Persian interface)" loading="lazy">
+      <img src="assets/shots/s3.webp" alt="audio grammar classes" loading="lazy">
+      <img src="assets/shots/s4.webp" alt="Italiano³ app screenshot (Persian interface)" loading="lazy">
+      <img src="assets/shots/s5.webp" alt="Italiano³ app screenshot (Persian interface)" loading="lazy">
+      <img src="assets/shots/s6.webp" alt="Italiano³ app screenshot (Persian interface)" loading="lazy">
+      <img src="assets/shots/s7.webp" alt="Italiano³ app screenshot (Persian interface)" loading="lazy">
+      <img src="assets/shots/s8.webp" alt="Italiano³ app screenshot (Persian interface)" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="teachers">
+  <div class="wrap duo">
+    <img class="shot rv" src="assets/shots/s3.webp" alt="Italiano³ app screenshot (Persian interface)" loading="lazy">
+    <div class="rv">
+      <small style="color:var(--g);font-weight:800">Audio classes</small>
+      <h2>Hear grammar from two teachers, not just read it</h2>
+      <p style="color:var(--mut)">Nika and Arash explain all 56 lessons in conversational Persian with practical examples — like a real class, wherever and whenever you want.</p>
+      <ul>
+        <li><img src="assets/3d/musical-notes.webp" alt=""><div><b>309 offline audio files</b><p>Listen offline on the train, in the car or before bed.</p></div></li>
+        <li><img src="assets/3d/brain.webp" alt=""><div><b>With transcripts and tables</b><p>The current section is highlighted on screen so you can follow along easily.</p></div></li>
+        <li><img src="assets/3d/sparkles.webp" alt=""><div><b>From A1 to C1</b><p>From your first “Ciao” to the nuances of formal and literary language.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="levels">
+  <div class="wrap">
+    <div class="sh rv"><small>Learning path</small><h2>Five levels, one clear path</h2><p>Start with a short placement test to find the right starting point.</p></div>
+    <div class="path">
+      <div class="lv rv"><span class="tag free">Free</span><div class="b" style="background:linear-gradient(160deg,#5be38a,#1f9a52)">A1</div><h4>Beginner</h4><p>Greetings, numbers, family and shopping</p></div>
+      <div class="lv rv"><span class="tag free">Free</span><div class="b" style="background:linear-gradient(160deg,#4fc3ff,#1b6fd1)">A2</div><h4>Elementary</h4><p>The past, travel, restaurants and daily routines</p></div>
+      <div class="lv rv"><span class="tag pro">Full version</span><div class="b" style="background:linear-gradient(160deg,#a58bff,#5b3bd6)">B1</div><h4>Intermediate</h4><p>Future and conditional, opinions and experiences</p></div>
+      <div class="lv rv"><span class="tag pro">Full version</span><div class="b" style="background:linear-gradient(160deg,#ff8fb1,#d63b6e)">B2</div><h4>Upper intermediate</h4><p>Subjunctive, society, work and economics</p></div>
+      <div class="lv rv"><span class="tag pro">Full version</span><div class="b" style="background:linear-gradient(160deg,#ffd36b,#e08a12)">C1</div><h4>Advanced</h4><p>Formal, academic and literary language, and idioms</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="sh rv"><small>Pricing</small><h2>Start free, upgrade when you want</h2><p>The full version is a one-time purchase, with no monthly subscription.</p></div>
+    <div class="plans">
+      <div class="plan rv">
+        <h3><img src="assets/3d/free-button.webp" alt="">Free version</h3>
+        <p class="price">Free forever</p>
+        <ul><li>All A1 and A2 content</li><li>Flashcards, pronunciation and microphone practice</li><li>A1 and A2 audio grammar classes</li><li>A1 and A2 tests and certificates</li><li>Includes ads</li></ul>
+      </div>
+      <div class="plan gold rv">
+        <h3><img src="assets/3d/crown.webp" alt="">Italiano³ Full</h3>
+        <p class="price">One-time purchase through Cafe Bazaar</p>
+        <ul><li>All levels up to C1</li><li>All audio classes and 2,000 words</li><li>Conjugations and practice for all verb tenses</li><li>All scenarios and stories</li><li>B1, B2 and C1 tests and certificates</li><li><b>Completely ad-free</b></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sh rv"><small>Frequently asked questions</small><h2>Any questions?</h2></div>
+    <div class="faq rv">
+      <details><summary>Do I need an internet connection?</summary><p>No. Lessons, images, Italian audio and audio classes are included in the app and work offline. Internet is only used for buying the full version through Bazaar and showing ads in the free version.</p></details>
+      <details><summary>Can I start from scratch?</summary><p>Yes. The app starts with the Italian alphabet and your first words, with all explanations in Persian. If you already know some Italian, take the placement test to start at the right level.</p></details>
+      <details><summary>Is the full version a subscription?</summary><p>No. Buy once through Cafe Bazaar and keep it forever. If you change phones, use Restore Purchase with the same Bazaar account.</p></details>
+      <details><summary>Where is my progress stored?</summary><p>Only on your phone. You can create a backup from the More section and restore it on a new phone.</p></details>
+      <details><summary>Which devices are supported?</summary><p>Android phones and tablets running Android 5.1 or later.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="final rv">
+      <img class="ic" src="assets/icon-192.png" alt="">
+      <h2>Say your first Italian sentence today</h2>
+      <p style="color:var(--mut)">Download free and start at A1. <span class="it">Andiamo!</span></p>
+      <div class="cta"><a class="btn btn-g bazaar" href="https://cafebazaar.ir/app/ir.italiano3.app" target="_blank" rel="noopener"><span class="bz">B</span>Get on Cafe Bazaar</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><img src="assets/icon-64.png" alt="" style="width:30px;height:30px;border-radius:9px"><span>Italiano<sup>³</sup></span></div>
+    <nav><a href="privacy-en.html">Privacy policy</a><a href="mailto:italianosupport@gmail.com">Support: <span class="it">italianosupport@gmail.com</span></a></nav>
+    <div>© <span id="yr">2026</span> Italiano³ · Made with ❤️ for Persian speakers</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+<a class="language-switch" href="index.html" lang="fa" hreflang="fa" aria-label="تغییر زبان به فارسی">فارسی</a>
+</body>
+</html>

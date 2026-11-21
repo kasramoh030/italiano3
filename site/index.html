@@ -157,8 +157,10 @@ footer nav{margin:0}
   footer .wrap{flex-direction:column;text-align:center}
   footer nav{flex-direction:column;gap:6px;align-items:center}
 }
+
+.language-switch{position:fixed;bottom:20px;inset-inline-end:20px;z-index:100;background:#302166;color:#fff;border:1px solid #a99cff;border-radius:999px;padding:10px 20px;font:700 15px system-ui,sans-serif;box-shadow:0 4px 18px #0004;text-decoration:none}.language-switch:focus-visible{outline:3px solid #38d97a;outline-offset:4px}
 </style>
-</head>
+<link rel="alternate" hreflang="fa" href="index.html"><link rel="alternate" hreflang="en" href="index-en.html"></head>
 <body>
 
 <header>
@@ -320,5 +322,6 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script>
+<a class="language-switch" href="index-en.html" lang="en" hreflang="en" aria-label="Switch to English">English</a>
 </body>
 </html>
